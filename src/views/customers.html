@@ -1,0 +1,155 @@
+@@include('./../tpl/header.html', { 'headerClass': '', 'bodyId': 'customers', 'activeCompany':
+'active', 'activeServices': '', 'activeChildren': '', 'activePayment': '', 'activeContacts': '', })
+
+<main class="content">
+  <div class="messengers">
+    <a href="/" class="icon--viber messengers__viber">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+
+    <a href="/" class="icon--whatsapp messengers__whatsapp">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+  </div>
+
+  <div class="container container--flex">
+    <aside class="aside">
+      <div class="aside__list">
+        <div class="aside__container">
+          <a href="/pages/company.html" class="aside__item">О компании</a>
+          <a href="/pages/customers.html" class="aside__item active">Наши клиенты</a>
+          <a href="/pages/reviews.html" class="aside__item">отзывы</a>
+          <a href="/pages/news.html" class="aside__item">новости</a>
+          <a href="/pages/faq.html" class="aside__item">вопросы и ответы</a>
+          <a href="/" class="aside__item">Транспортное обеспечение массовых мероприятий</a>
+        </div>
+      </div>
+
+      @@include('./../tpl/aside/transport--links.html')
+    </aside>
+
+    <div class="content__main">
+      <section class="customers">
+        @@include('./../tpl/title-block.html', { title: 'Наши клиенты' })
+
+        <p class="customers__text">
+          Нам доверяют знаменитости и т.д .....текст о постоянных клиентах...
+        </p>
+
+        <div class="customers__block owl-carousel">
+          <div class="customers__item">
+            <div class="customers__image">
+              <a data-fancybox="gallery" href="/images/customers/quality/customers-1.jpg">
+                <img src="/images/customers/customers-1.png" alt="customers-1" />
+              </a>
+            </div>
+
+            <p class="customers__name">Игорь Жижикин</p>
+          </div>
+          <div class="customers__item">
+            <div class="customers__image">
+              <a data-fancybox="gallery" href="/images/customers/quality/customers-2.jpg">
+                <img src="/images/customers/customers-2.png" alt="customers-2" />
+              </a>
+            </div>
+
+            <p class="customers__name">Виктория Лопырева</p>
+          </div>
+          <div class="customers__item">
+            <div class="customers__image">
+              <a data-fancybox="gallery" href="/images/customers/quality/customers-3.jpg">
+                <img src="/images/customers/customers-3.png" alt="customers-3" />
+              </a>
+            </div>
+
+            <p class="customers__name">Вера Брежнева</p>
+          </div>
+          <div class="customers__item">
+            <div class="customers__image">
+              <a data-fancybox="gallery" href="/images/customers/quality/customers-4.jpg">
+                <img src="/images/customers/customers-4.png" alt="customers-4" />
+              </a>
+            </div>
+
+            <p class="customers__name">Олег Знарок</p>
+          </div>
+          <div class="customers__item">
+            <div class="customers__image">
+              <a data-fancybox="gallery" href="/images/customers/quality/customers-1.jpg">
+                <img src="/images/customers/customers-1.png" alt="customers-1" />
+              </a>
+            </div>
+
+            <p class="customers__name">Игорь Жижикин</p>
+          </div>
+          <div class="customers__item">
+            <div class="customers__image">
+              <a data-fancybox="gallery" href="/images/customers/quality/customers-2.jpg">
+                <img src="/images/customers/customers-2.png" alt="customers-2" />
+              </a>
+            </div>
+
+            <p class="customers__name">Виктория Лопырева</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="content__title-block">
+          <h3 class="content__title--block">мы <span>сотрудничаем</span></h3>
+          <div class="content__title-decor"></div>
+        </div>
+
+        <div class="partners__image">
+          <img src="/images/customers/partners.png" alt="partners" />
+        </div>
+
+        <div class="slider owl-carousel">
+          <img src="/images/customers/logo-1.png" alt="logo-1" />
+          <img src="/images/customers/logo-2.png" alt="logo-2" />
+          <img src="/images/customers/logo-3.png" alt="logo-3" />
+          <img src="/images/customers/logo-4.png" alt="logo-4" />
+        </div>
+      </section>
+
+      <section class="letters">
+        <div class="content__title-block">
+          <h3 class="content__title--block"><span>благодарственные письма</span></h3>
+          <div class="content__title-decor"></div>
+        </div>
+
+        <div class="slider owl-carousel">
+          <div class="letters__item">
+            <img src="https://via.placeholder.com/344x470" alt="thanks-letter" />
+          </div>
+
+          <div class="letters__item">
+            <img src="https://via.placeholder.com/344x470" alt="thanks-letter" />
+          </div>
+
+          <div class="letters__item">
+            <img src="https://via.placeholder.com/344x470" alt="thanks-letter" />
+          </div>
+
+          <div class="letters__item">
+            <img src="https://via.placeholder.com/344x470" alt="thanks-letter" />
+          </div>
+
+          <div class="letters__item">
+            <img src="https://via.placeholder.com/344x470" alt="thanks-letter" />
+          </div>
+
+          <div class="letters__item">
+            <img src="https://via.placeholder.com/344x470" alt="thanks-letter" />
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <a class="content__scroll-top"></a>
+</main>
+
+@@include('./../tpl/modal.html') @@include('./../tpl/footer.html')

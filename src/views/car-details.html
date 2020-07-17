@@ -1,0 +1,553 @@
+@@include('./../tpl/header.html', { 'headerClass': '', 'bodyId': 'car-details', 'activeCompany': '',
+'activeServices': '', 'activeChildren': '', 'activePayment': '', 'activeContacts': '', })
+
+<div class="container">
+  <div class="breadcrumbs breadcrumbs--details">
+    <a href="/" class="breadcrumbs__item">Автопарк</a>
+    <p class="breadcrumbs__item">Jaguar XJ</p>
+  </div>
+</div>
+
+<main class="content content--details">
+  <div class="messengers">
+    <a href="/" class="icon--viber messengers__viber">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+
+    <a href="/" class="icon--whatsapp messengers__whatsapp">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+  </div>
+
+  <div class="container container--flex">
+    <aside class="aside aside--details">
+      <div class="aside__list aside__list--hide aside__list--details">
+        <div class="aside__container">
+          <a href="/" class="aside__item">Школьные автобусы</a>
+          <a href="/" class="aside__item">Развозка сотрудников</a>
+          <a href="/" class="aside__item">Автобусы в Финляндию</a>
+          <a href="/" class="aside__item">Автобусы в Европу</a>
+          <a href="/" class="aside__item">Трансфер в аэропорт</a>
+          <a href="/" class="aside__item">VIP Такси</a>
+          <a href="/" class="aside__item">Инструкция для пассажиров</a>
+          <a href="/" class="aside__item">Транспортное обеспечение массовых мероприятий</a>
+        </div>
+      </div>
+
+      @@include('./../tpl/aside/transport--links.html')
+    </aside>
+
+    <div class="content__main content__main--details">
+      <section class="car-details">
+        <div class="car-details__header">
+          <div class="car-details__images">
+            <div class="car-details__main-image">
+              <img
+                src="/images/details/quality/car-white-1.jpg"
+                alt="main-image"
+              />
+            </div>
+
+            <div class="slider owl-carousel">
+              <img
+                src="/images/details/car-white-1.png"
+                alt="slider-1"
+                data-quality-src="/images/details/quality/car-white-1.jpg"
+                class="active"
+              />
+              <img
+                src="/images/details/car-white-2.png"
+                alt="slider-2"
+                data-quality-src="/images/details/quality/car-white-2.jpg"
+              />
+              <img
+                src="/images/details/car-white-3.png"
+                alt="slider-3"
+                data-quality-src="/images/details/quality/car-white-3.jpg"
+              />
+              <img
+                src="/images/details/car-white-4.png"
+                alt="slider-4"
+                data-quality-src="/images/details/quality/car-white-4.jpg"
+              />
+              <img
+                src="/images/details/car-white-5.png"
+                alt="slider-5"
+                data-quality-src="/images/details/quality/car-white-5.jpg"
+              />
+            </div>
+          </div>
+
+          <div class="slider-big owl-carousel">
+            <img
+              src="/images/details/quality/car-white-1.jpg"
+              alt="slider-1"
+            />
+            <img
+              src="/images/details/quality/car-white-2.jpg"
+              alt="slider-2"
+            />
+            <img
+              src="/images/details/quality/car-white-3.jpg"
+              alt="slider-3"
+            />
+            <img
+              src="/images/details/quality/car-white-4.jpg"
+              alt="slider-4"
+            />
+            <img
+              src="/images/details/quality/car-white-5.jpg"
+              alt="slider-5"
+            />
+          </div>
+
+          <div class="info">
+            <div class="info__header">
+              <h3 class="info__title">Jaguar XJ</h3>
+
+              <div class="info__row">
+                <p class="info__name">
+                  <span class="icon icon--car"></span>
+                  класс авто:
+                </p>
+
+                <p class="info__desc">бизнес</p>
+              </div>
+
+              <div class="info__row">
+                <p class="info__name">
+                  <span class="icon icon--door"></span>
+                  цвет:
+                </p>
+
+                <div class="info__desc info__desc--color">
+                  <p class="info__color active" data-color="white">
+                    <span class="icon icon--white"></span>
+                    <span class="info__color-text">белый</span>
+                  </p>
+
+                  <a href="/" class="info__color" data-color="black">
+                    <span class="icon icon--black"></span>
+                    <span class="info__color-text">черный</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <table class="info__table">
+              <tr>
+                <th>
+                  <p class="info__name">
+                    <span class="icon icon--car"></span>
+                    бизнес класс
+                  </p>
+                </th>
+                <th>
+                  <div class="info__name info__name--color">
+                    <span class="icon icon--door"></span>
+                    <div class="info__desc info__desc--color">
+                      <p class="info__color active" data-color="white">
+                        <span class="icon icon--white"></span>
+                        <span class="info__color-text">белый</span>
+                      </p>
+                      <a href="/" class="info__color" data-color="black">
+                        <span class="icon icon--black"></span>
+                        <span class="info__color-text">черный</span>
+                      </a>
+                    </div>
+                  </div>
+                </th>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="info__cost-row">
+                    <p class="info__cost-name">1 час аренды от:</p>
+
+                    <p class="info__cost-price info__cost-price--color">
+                      1900<span class="ruble-icon">&#8381;</span>
+                    </p>
+                  </div>
+
+                  <div class="info__cost-row">
+                    <p class="info__cost-name">мин. заказ (3+1):</p>
+
+                    <p class="info__cost-price">7600<span class="ruble-icon">&#8381;</span></p>
+                  </div>
+                </td>
+
+                <td>
+                  <div class="info__cost-row">
+                    <p class="info__cost-name">трансфер:</p>
+
+                    <p class="info__cost-price">7600<span class="ruble-icon">&#8381;</span></p>
+                  </div>
+
+                  <div class="info__cost-row">
+                    <p class="info__cost-name">более:</p>
+
+                    <p class="info__cost-specify">Уточнить цену</p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <div class="info__cost">
+              <div class="info__cost-row">
+                <p class="info__cost-name">1 час аренды от:</p>
+
+                <p class="info__cost-price info__cost-price--color">
+                  1200<span class="ruble-icon">&#8381;</span>
+                </p>
+              </div>
+
+              <div class="info__cost-row">
+                <p class="info__cost-name">мин. заказ (4+1):</p>
+
+                <p class="info__cost-price">6000<span class="ruble-icon">&#8381;</span></p>
+              </div>
+
+              <div class="info__cost-row">
+                <p class="info__cost-name">трансфер:</p>
+
+                <p class="info__cost-price">4800<span class="ruble-icon">&#8381;</span></p>
+              </div>
+
+              <div class="info__cost-row">
+                <p class="info__cost-name">более:</p>
+
+                <p class="info__cost-specify">Уточнить цену</p>
+              </div>
+            </div>
+
+            <div class="info__order">
+              <button class="info__order-button">заказать</button>
+
+              <div class="info__order-voice"></div>
+
+              <div class="info__messengers">
+                <div class="info__messenger info__messenger--whatsapp">
+                  написать в
+                  <span class="icon icon--whatsapp-white"></span>
+                </div>
+
+                <div class="info__messenger info__messenger--vk">
+                  написать в
+                  <span class="icon icon--vk"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="share">
+              <p class="share__text">Поделиться:</p>
+
+              <a href="/" class="icon--facebook share__facebook"></a>
+              <a href="/" class="icon--vk share__vk"></a>
+              <a href="/" class="icon--odnoklassniki share__odnoklassniki"></a>
+              <a href="/" class="icon--twitter share__twitter"></a>
+              <a href="/" class="icon--telegram share__telegram"></a>
+              <a href="/" class="icon--whatsapp-white share__whatsapp">
+                <span class="path1"></span><span class="path2"></span><span class="path3"></span
+                ><span class="path4"></span><span class="path5"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-details__tabs">
+          <div class="car-details__tabs-container">
+            <p class="car-details__tab active" data-tab="description">описание автобуса</p>
+            <p class="car-details__tab" data-tab="conditions">условия аренды</p>
+            <p class="car-details__tab" data-tab="payment">оплата</p>
+          </div>
+        </div>
+
+        <div class="description active">
+          <p class="description__text">
+            Jaguar XJ роскошный седан премиум класса от мирового автомобильного бренда «Ягуар».
+            Удлиненная база автомобиля предоставляет гостям огромное внутреннее пространство для
+            максимального комфорта в пути. Несомненно, что этот автомобиль будет притягивать взгляды
+            и вызывать чувство восторга и нескончаемого праздника для тех, кому посчастливится
+            арендовать этот автомобиль на свою свадьбу. Ягуар XJ пользуется огромной популярностью
+            среди молодожёнов, и если вы решили что он именно то, что вам нужно — звоните прямо
+            сейчас, свободных дат всё меньше!
+          </p>
+
+          <div class="complectation">
+            <h4 class="complectation__title">Комплектация:</h4>
+
+            <div class="complectation__block">
+              <div class="complectation__item">
+                <span class="icon icon--man-2"></span>
+                <p class="complectation__text">водитель в костюме</p>
+              </div>
+
+              <div class="complectation__item">
+                <span class="icon icon--charging"></span>
+                <p class="complectation__text">зарядка для телефона</p>
+              </div>
+
+              <div class="complectation__item">
+                <span class="icon icon--air-conditioning"></span>
+                <p class="complectation__text">климат контроль</p>
+              </div>
+
+              <div class="complectation__item">
+                <span class="icon icon--TV"></span>
+                <p class="complectation__text">аудио и видео система</p>
+              </div>
+
+              <div class="complectation__item">
+                <span class="icon icon--seat"></span>
+                <p class="complectation__text">регулировка сидений</p>
+              </div>
+
+              <div class="complectation__item">
+                <span class="icon icon--usb"></span>
+                <p class="complectation__text">USB вход</p>
+              </div>
+
+              <div class="complectation__item">
+                <span class="icon icon--umbrella"></span>
+                <p class="complectation__text">зонт</p>
+              </div>
+
+              <div class="complectation__item">
+                <span class="icon icon--napkins"></span>
+                <p class="complectation__text">влажные и сухие салфетки</p>
+              </div>
+
+              <div class="complectation__item">
+                <span class="icon icon--water"></span>
+                <p class="complectation__text">свежая вода</p>
+              </div>
+
+              <div class="complectation__item">
+                <span class="icon icon--man"></span>
+                <p class="complectation__text">помощь с багажом</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="characteristics">
+            <h4 class="characteristics__title">Характеристики:</h4>
+
+            <div class="characteristics__block">
+              <ul class="characteristics__list">
+                <li class="characteristics__list-item">цвет кузова — белый/черный</li>
+                <li class="characteristics__list-item">салон — белая и тёмная кожа</li>
+                <li class="characteristics__list-item">вставки из натурального дерева</li>
+                <li class="characteristics__list-item">
+                  панорамные люки Multimedia (CD+NAVI).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="conditions">
+          <ul class="conditions__list">
+            <li class="conditions__list-item">
+              <span>Минимальное количество</span> часов аренды транспорта по городу –
+              <span>
+                4 часа (включая 1 час подачи).
+              </span>
+            </li>
+            <li class="conditions__list-item">
+              Трансфер - поездка из точки А в точку В с максимальным ожиданием 30 минут аэропорт,
+              вокзал, гостиница
+            </li>
+            <li class="conditions__list-item">
+              Услуга встречи клиента - <span>от 250 руб. *</span> только для ТС не более 6
+              посадочных мест.
+            </li>
+            <li class="conditions__list-item">
+              <span>В период с 23.00 до 6.00</span> действует ночной тариф с коэффициентом 1.5.
+            </li>
+            <li class="conditions__list-item">
+              Время работы транспорта за пределами г. Санкт-Петербурга, рассчитывается
+              индивидуально.
+            </li>
+            <li class="conditions__list-item">
+              В период проведения ПМЭФ, FIFA, ШОС и БРИКС уточняйте стоимость транспорта у своих
+              персональных менеджеров.
+            </li>
+
+            <li class="conditions__list-item conditions__list-item--days">
+              <span>ПН-ЧТ (4+1/в сезон):</span> 1200<span class="ruble-icon">&#8381;</span> /
+              1400<span class="ruble-icon">&#8381;</span>
+            </li>
+            <li class="conditions__list-item conditions__list-item--days">
+              <span>ПТ-ВС (5+1/в сезон):</span> 1500<span class="ruble-icon">&#8381;</span> /
+              1700<span class="ruble-icon">&#8381;</span>
+            </li>
+          </ul>
+
+          <p class="conditions__text">
+            Дополнительные услуги и расчеты производятся вашим персональным менеджером по телефону:
+            <span
+              ><a href="8-800-550-96-85">8 (800) 550-96-85</a> и
+              <a href="8-921-996-56-96">8 (921) 996-56-96</a></span
+            >
+          </p>
+        </div>
+
+        <div class="payment">
+          <h3 class="payment__title">Оплатить заказ можно следующими способами:</h3>
+
+          <ul class="payment__list">
+            <li class="payment__list-item">
+              <h4 class="payment__subtitle">Оплата через Сбербанк-онлайн:</h4>
+              <p class="payment__text">
+                Для оплаты через Сбербанк-онлайн, Вам необходимо связаться с менеджерами компании и
+                уточнить реквизиты счета, на который нужно перечислить необходимую сумму.
+              </p>
+            </li>
+            <li class="payment__list-item">
+              <h4 class="payment__subtitle">Оплата в офисе:</h4>
+              <p class="payment__text">
+                Для оплаты в офисе нашей компании, Вам необходимо оставить заявку на почте:
+                info@absolute-trans.ru, указав подробности заказа или позвонить по телефону
+                +7(812)305-90-30, получить расчет, затем подъехать с паспортом по адресу
+                Санкт-Петербург, Коломяжский пр-т д.18, оф. 3-055
+              </p>
+
+              <div class="payment__worktime">
+                <p class="payment__text">Часы работы офиса:</p>
+                <p class="payment__text">Пн-Пт : с 9:00-20:00</p>
+                <p class="payment__text">Сб-Вс : с 10:00-18:00</p>
+              </div>
+            </li>
+            <li class="payment__list-item">
+              <h4 class="payment__subtitle">Оплата для юридических лиц:</h4>
+              <p class="payment__text">
+                Для оплаты по безналичному расчету от юридического лица, необходимо оставить заявку
+                в свободной форме на почте: info@absolute-trans.ru реквизитами компании, для
+                оформления договора и выставления счета.
+              </p>
+            </li>
+            <li class="payment__list-item">
+              <h4 class="payment__subtitle payment__subtitle--color payment__yandex-wallet">
+                Оплата онлайн через яндекс. кассу
+              </h4>
+              <p class="payment__text">
+                заполните форму по ссылке и нажмите кнопку «Оплатить». Откроется страница сервиса
+                Яндекс.Касса, где вы сможете выбрать удобный способ оплаты.
+              </p>
+            </li>
+          </ul>
+
+          <div class="payment__types">
+            <h4 class="payment__subtitle payment__subtitle--types">Принимаем к оплате:</h4>
+
+            <span class="icon--visa payment__visa">
+              <span class="path1"></span><span class="path2"></span>
+            </span>
+            <span class="icon--mastercard payment__mastercard">
+              <span class="path1"></span><span class="path2"></span>
+            </span>
+            <span class="icon--sber payment__sber"></span>
+            <span class="icon--qiwi payment__qiwi"></span>
+            <span class="icon--yandex-wallet payment__yandex-wallet"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="similar">
+        <div class="content__title-block content__title-block--subpage">
+          <h3 class="content__title--block">похожие <span>предложения</span></h3>
+          <div class="content__title-decor"></div>
+        </div>
+
+        <div class="cards">
+          <div class="cards__block owl-carousel">
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <img src="/images/bus/bus-1.png" alt="bus-1" />
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">1900<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Man Regio 205</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <img src="/images/bus/bus-2.png" alt="bus-2" />
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">1700<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">MAN</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <img src="/images/bus/bus-1.png" alt="bus-1" />
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">1700<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Zhong Tong</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <a class="content__scroll-top"></a>
+</main>
+
+@@include('./../tpl/modal.html') @@include('./../tpl/footer.html')

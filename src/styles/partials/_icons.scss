@@ -1,0 +1,355 @@
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon.woff") format("woff"),
+        url("../fonts/icomoon.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.icomoon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a[class^="icon"], span[class^="icon"] {
+    @extend .icomoon;
+}
+
+.icon--hours:before {
+    content: "\901";
+}
+
+.icon--children:before {
+    content: "\e906";
+}
+
+.icon--insurance:before {
+    content: "\e90c";
+}
+
+.icon--quote:before {
+    content: "\e91d";
+}
+
+.icon--TO:before {
+    content: "\e929";
+}
+
+.icon--bus:before {
+    content: "\e903";
+}
+
+.icon--car:before {
+    content: "\e904";
+}
+
+.icon--microbus:before {
+    content: "\e913";
+}
+
+.icon--minivan:before {
+    content: "\e915";
+}
+
+.icon--calendar:before {
+    content: "\e926";
+}
+
+.icon--door:before {
+    content: "\e922";
+}
+
+.icon--microphone-white:before {
+    content: "\e914";
+    color: #fff;
+}
+
+.icon--visa .path1:before {
+    content: "\e935";
+    color: rgb(0, 91, 172);
+}
+
+.icon--visa .path2:before {
+    content: "\e936";
+    margin-left: -1.7353515625em;
+    color: rgb(246, 172, 29);
+}
+
+.icon--visa-white:before {
+    content: "\e937";
+    color: #fff;
+}
+
+.icon--air-conditioning:before {
+    content: "\e901";
+}
+
+.icon--baggage:before {
+    content: "\e902";
+}
+
+.icon--charging:before {
+    content: "\e905";
+}
+
+.icon--man:before {
+    content: "\e90e";
+}
+
+.icon--man-2:before {
+    content: "\e912";
+}
+
+.icon--microphone:before {
+    content: "\e914";
+}
+
+.icon--napkins:before {
+    content: "\e917";
+}
+
+.icon--seat-belts:before {
+    content: "\e923";
+}
+
+.icon--seat:before {
+    content: "\e920";
+}
+
+.icon--seat-2:before {
+    content: "\e921";
+}
+
+.icon--seat-3:before {
+    content: "\e942";
+}
+
+.icon--TV:before {
+    content: "\e92a";
+}
+
+.icon--umbrella:before {
+    content: "\e92c";
+}
+
+.icon--usb:before {
+    content: "\e92d";
+}
+
+.icon--water:before {
+    content: "\e939";
+}
+
+.icon--vk:before {
+    content: "\e938";
+}
+
+.icon--facebook:before {
+    content: "\e909";
+}
+
+.icon--odnoklassniki:before {
+    content: "\e918";
+}
+
+.icon--telegram:before {
+    content: "\e925";
+}
+
+.icon--twitter:before {
+    content: "\e92b";
+}
+
+.icon--instagram:before {
+    content: "\e90b";
+}
+
+.icon--mastercard .path1:before {
+    content: "\e90f";
+    color: rgb(249, 50, 50);
+}
+
+.icon--mastercard .path2:before {
+    content: "\e910";
+    margin-left: -1.37109375em;
+    color: rgb(254, 208, 73);
+}
+
+.icon--mastercard-white:before {
+    content: "\e911";
+    color: #fff;
+}
+
+.icon--pdf:before {
+    content: "\e919";
+    color: #fff;
+}
+
+.icon--qiwi:before {
+    content: "\e91c";
+}
+
+.icon--sber:before {
+    content: "\e91e";
+}
+
+.icon--viber .path1:before {
+    content: "\e92e";
+    color: rgb(145, 101, 183);
+}
+
+.icon--viber .path2:before {
+    content: "\e92f";
+    margin-left: -0.9921875em;
+    color: rgb(123, 80, 156);
+}
+
+.icon--viber .path3:before {
+    content: "\e930";
+    margin-left: -0.9921875em;
+    color: rgb(145, 101, 183);
+}
+
+.icon--viber .path4:before {
+    content: "\e931";
+    margin-left: -0.9921875em;
+    color: rgb(123, 80, 156);
+}
+
+.icon--viber .path5:before {
+    content: "\e932";
+    margin-left: -0.9921875em;
+    color: rgb(95, 56, 130);
+}
+
+.icon--viber .path6:before {
+    content: "\e933";
+    margin-left: -0.9921875em;
+    color: rgb(95, 56, 130);
+}
+
+.icon--viber-white:before {
+    content: "\e934";
+    color: #fff;
+}
+
+.icon--whatsapp .path1:before {
+    content: "\e93a";
+    color: rgb(127, 211, 113);
+}
+
+.icon--whatsapp .path2:before {
+    content: "\e93b";
+    margin-left: -0.9921875em;
+    color: rgb(109, 188, 97);
+}
+
+.icon--whatsapp .path3:before {
+    content: "\e93c";
+    margin-left: -0.9921875em;
+    color: rgb(84, 155, 69);
+}
+
+.icon--whatsapp .path4:before {
+    content: "\e93d";
+    margin-left: -0.9921875em;
+    color: rgb(84, 155, 69);
+}
+
+.icon--whatsapp .path5:before {
+    content: "\e93e";
+    margin-left: -0.9921875em;
+    color: rgb(92, 170, 79);
+}
+
+.icon--whatsapp-white:before {
+    content: "\e900";
+    color: #fff;
+}
+
+.icon--yandex-wallet:before {
+    content: "\e93f";
+}
+
+.icon--email:before {
+    content: "\e908";
+}
+
+.icon--location:before {
+    content: "\e90d";
+}
+
+.icon--hours-2:before {
+    content: "\e927";
+}
+
+.icon--forest:before {
+    content: "\e90a";
+}
+
+.icon--museum:before {
+    content: "\e916";
+}
+
+.icon--pen:before {
+    content: "\e91a";
+}
+
+.icon--schoolboy:before {
+    content: "\e91f";
+}
+
+.icon--sport:before {
+    content: "\e924";
+}
+
+.icon--hours-3:before {
+    content: "\e928";
+}
+
+.icon--clip:before {
+    content: "\e907";
+}
+
+.icon--money:before {
+    content: "\e941";
+}
+
+.icon--manager:before {
+    content: "\e940";
+}
+
+.icon--buses:before {
+    content: "\e91b";
+}
+
+.icon--select-arrow:before {
+    content: "\e94d";
+}
+
+.icon--select-arrow-red:before {
+    content: "\e943";
+}
+
+.icon--scroll-top-arrow:before {
+    content: "\e94c";
+}
+
+.icon--arrow-back:before {
+    content: "\e94b";
+}
+
+.icon--arrow-down:before {
+    content: "\e94a";
+}

@@ -1,0 +1,115 @@
+@@include('./../tpl/header.html', { 'headerClass': '', 'bodyId': 'contacts', 'activeCompany': '',
+'activeServices': '', 'activeChildren': '', 'activePayment': '', 'activeContacts': 'active', })
+
+<main class="content">
+  <div class="messengers">
+    <a href="/" class="icon--viber messengers__viber">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+
+    <a href="/" class="icon--whatsapp messengers__whatsapp">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+  </div>
+
+  <div class="container container--flex">
+    <aside class="aside">
+      @@include('./../tpl/aside/transport--links.html')
+    </aside>
+
+    <div class="content__main">
+      @@include('./../tpl/title-block.html', { title: 'Контакты' })
+
+      <section class="contacts">
+        <a href="tel:8-800-550-96-85" class="contacts__title contacts__title--number">
+          <span class="contacts__title--underline">8 (800) 550-96-85</span>
+          <span class="contacts__title--hide">(звонок бесплатный)</span>
+        </a>
+
+        <div class="contacts__block">
+          <p class="contacts__text">менеджер: +7 (934) 888-22-56</p>
+          <p class="contacts__text">менеджер: +7 (921) 996-56-96</p>
+          <p class="contacts__text">бухгалтерия: +7 (812) 305-91-47</p>
+          <p class="contacts__text">диспетчер: +7 (812) 983-70-40</p>
+          <p class="contacts__text">факс: +7 (812) 305 90 30</p>
+        </div>
+
+        <div class="contacts__messengers">
+          <div class="contacts__messenger contacts__messenger--whatsapp">
+            написать в
+            <span class="icon icon--whatsapp-white"></span>
+          </div>
+
+          <div class="contacts__messenger contacts__messenger--vk">
+            написать в
+            <span class="icon icon--vk"></span>
+          </div>
+        </div>
+
+        <a href="mailto:info@absolute-trans.ru" class="contacts__title contacts__title--mail">
+          <span class="contacts__title--underline">info@absolute-trans.ru</span>
+        </a>
+
+        <div class="contacts__block contacts__block--hours">
+          <p class="contacts__text">Пн-Пт 09:00 до 20:00</p>
+          <p class="contacts__text">Сб,Вс 10:00 до 18:00</p>
+        </div>
+
+        <div class="contacts__block contacts__block--address">
+          <p class="contacts__text">197348, г. Санкт - Петербург</p>
+          <p class="contacts__text">Коломяжский пр., д. 18, БЦ "Норд Хаус", оф. 3-055</p>
+        </div>
+
+        <div class="contacts__map">
+          <img src="/images/contacts/map.png" alt="map" />
+        </div>
+
+        <form class="form">
+          <h4 class="form__title">обратная связь</h4>
+
+          <div class="form__main">
+            <div class="form__left">
+              <label class="form__label">
+                <p class="form__text form__text--label">
+                  имя*
+                </p>
+
+                <input type="text" class="form__input" />
+              </label>
+
+              <label class="form__label">
+                <p class="form__text form__text--label">
+                  телефон*
+                </p>
+
+                <input type="text" class="form__input" placeholder="+7 (__) __-__-__" />
+              </label>
+            </div>
+
+            <div class="form__right">
+              <label class="form__label form__label--textarea">
+                <p class="form__text form__text--label">
+                  ваше сообщение*
+                </p>
+
+                <textarea class="form__textarea"></textarea>
+              </label>
+
+              <div class="form__footer">
+                <p class="form__text form__text--notation">* Поля обязательны для заполнения</p>
+
+                <input type="submit" value="Отправить" class="form__submit" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <a class="content__scroll-top"></a>
+</main>
+
+@@include('./../tpl/modal.html') @@include('./../tpl/footer.html')

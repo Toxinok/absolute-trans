@@ -1,0 +1,137 @@
+@@include('./../tpl/header.html', { 'headerClass': '', 'bodyId': 'children', 'activeCompany': '',
+'activeServices': '', 'activeChildren': 'active', 'activePayment': '', 'activeContacts': '', })
+
+<main class="content">
+  <div class="messengers">
+    <a href="/" class="icon--viber messengers__viber">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+
+    <a href="/" class="icon--whatsapp messengers__whatsapp">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+  </div>
+
+  <div class="container container--flex">
+    <aside class="aside">
+      <div class="aside__list">
+        <div class="aside__container">
+          <a href="/pages/children.html" class="aside__item active">перевозки детских групп</a>
+          <a href="/" class="aside__item">почему мы</a>
+          <a href="/" class="aside__item">памятка организациям</a>
+          <a href="/pages/school.html" class="aside__item">школьные экскурсии</a>
+          <a href="/pages/school-bus.html" class="aside__item">школьные автобусы</a>
+          <a href="/" class="aside__item">как подать уведомление</a>
+          <a href="/" class="aside__item">Транспортное обеспечение массовых мероприятий</a>
+        </div>
+      </div>
+
+      @@include('./../tpl/aside/transport--links.html')
+    </aside>
+
+    <div class="content__main">
+      <section class="children">
+        @@include('./../tpl/title-block.html', { title: 'Перевозки детских групп' })
+
+        <h3 class="children__title-block">
+          <span class="icon icon--pen"></span>
+          <span class="children__title--main">Как подать уведомление в гибдд?</span>
+        </h3>
+
+        <p class="children__text">
+          Для подачи уведомления о перевозке организованной группы детей Вы можете воспользоваться
+          сайтом Госавтоинспекции. По ссылке подробная инструкция
+        </p>
+
+        <p class="children__text">
+          Заказывая экскурсию у нас,
+          <span
+            >вы полностью ограждаете себя от всей головной боли связанной с организацией
+            поездки</span
+          >
+          (согласование в ГАИ, подготовка более 20 документов на перевозку и попытки попасть к
+          инспекторам, которые могут оказаться неудачными, и вы ещё будете приезжать туда не
+          однократно), переговорами с музеями, гидами и всеми теми кто встаёт у вас на пути при
+          подготовке к экскурсионной поездке.
+        </p>
+
+        <p class="children__text">
+          <span>Мы рады поделиться с вами более чем 15-ти летним опытом</span> в организации
+          транспортного обслуживания самого высокого уровня и перенести наше высокое качество в
+          организацию школьных экскурсий!
+        </p>
+
+        <ul class="children__list">
+          <li class="children__list-item">15 лет успешной работы в школьных перевозках;</li>
+          <li class="children__list-item">Круглосуточная поддержка заказа;</li>
+          <li class="children__list-item">
+            Водительских стаж работы на автобусах более 15 лет;
+          </li>
+          <li class="children__list-item">
+            Только собственные автобусы и микроавтобусы не старше 5 лет!;
+          </li>
+          <li class="children__list-item">
+            Наличие всех необходимых лицензий и сертификатов для перевозки детей;
+          </li>
+          <li class="children__list-item">Опытные менеджеры и транспортные диспетчера;</li>
+          <li class="children__list-item">Более 30000 обслуженных заказов ежегодно;</li>
+          <li class="children__list-item">Гибкая система скидок при покупке абонементов.</li>
+        </ul>
+
+        <p class="children__text">
+          Мы надеемся, что весь наш накопленный опыт поможет детскому туризму расти и развиваться, и
+          избавит вас от любых возникающих проблем при организации любого выездного мероприятия и
+          позволит вам не отказывать детям в удовольствии от поездок и путешествий по
+          Санкт-Петербургу и другим городам!
+        </p>
+
+        <h3 class="children__title children__title--subtitle">
+          Памятка для организации перевозки детской группы
+        </h3>
+
+        <p class="children__text">
+          При заказе транспорта для перевозки детской группы Вам необходимо оформить пакет
+          документов. Данные документы должны быть предъявлены представителю компании (водителю)
+          перед посадкой детей в автобус:
+        </p>
+
+        <ol class="children__list children__list--ordered">
+          <li class="children__list-item children__list-item--ordered">
+            Список детей, в котором указаны их фамилии, имена, отчества и возраст;
+          </li>
+          <li class="children__list-item children__list-item--ordered">
+            Список сопровождающих с указанием их номеров телефонов, а также выделение главного
+            сопровождающего
+          </li>
+          <li class="children__list-item children__list-item--ordered">
+            Схема рассадки детей в автобусе;
+          </li>
+          <li class="children__list-item children__list-item--ordered">
+            <a href="/">Копия уведомления ГИБДД об организованной перевозке группы детей</a> или при
+            перевозке более чем 3 автобусами копия решения о назначении сопровождения автобусов
+            автомобилем (ями) подразделения Госавтоинспекции.
+          </li>
+          <li class="children__list-item children__list-item--ordered">
+            График движения с расчетным временем перевозки, местами и временем остановок.
+          </li>
+          <li class="children__list-item children__list-item--ordered">
+            Список набора пищевых продуктов (сухих пайков, бутилированной воды) при необходимости
+          </li>
+        </ol>
+
+        <p class="children__text">
+          Также перед посадкой представителем компании (водителем) будет оформлен заказ-наряд
+          (приравнивается к договору фрахтования согласно п.93 Постановления Правительства РФ от
+          14.02.2009 N 112 (ред. от 28.04.2015) «Об утверждении Правил перевозок пассажиров и багажа
+          автомобильным транспортом и городским наземным электрическим транспортом»).
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <a class="content__scroll-top"></a>
+</main>
+
+@@include('./../tpl/modal.html') @@include('./../tpl/footer.html')

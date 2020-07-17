@@ -1,0 +1,110 @@
+.ui-selectmenu-button {
+    position: relative;
+    height: 40px;
+
+    border: 1px solid rgba(50, 50, 50, 0.1);
+    border-radius: 3px;
+
+    padding-left: 20px;
+    font-size: 13px;
+
+    cursor: pointer;
+
+    &:hover {
+        .ui-selectmenu-icon::before {
+            color: #f00;
+        }
+    }
+
+    &#ui-id-1-button {
+        flex-basis: 235px;
+
+        @media screen and (max-width: 1660px) {
+            flex-basis: 176px;
+        }
+
+        @media screen and (max-width: 860px) {
+            display: none;
+        }
+    }
+
+    &#ui-id-2-button {
+        flex-basis: 255px;
+
+        @media screen and (max-width: 1660px) {
+            flex-basis: 184px;
+        }
+
+        @media screen and (max-width: 860px) {
+            display: none;
+        }
+    }
+
+    .ui-selectmenu-icon {
+        display: flex;
+
+        position: absolute;
+        top: 60%;
+        right: 29px;
+        height: 14px;
+        transform: translateY(-50%);
+
+        text-indent: unset;
+
+        @media screen and (max-width: 860px) {
+            right: 10px;
+        }
+
+        @extend .icon--select-arrow;
+
+        &::before {
+            font-size: 6px;
+            color: #000;
+
+            cursor: pointer;
+            @extend .icomoon;
+        }
+    }
+
+    &-open {
+        .ui-selectmenu-icon {
+
+            &::before {
+                transform: translateY(-50%) rotate(180deg);
+                color: #f00;
+            }
+        }
+    }
+}
+
+.ui-selectmenu-text {
+    line-height: 27px;
+}
+
+.ui-selectmenu-menu {
+    .ui-menu {
+        border: 1px solid rgba(50, 50, 50, 0.1);
+        border-radius: 3px;
+        background-color: #fff;
+
+        .ui-menu-item-wrapper {
+            padding-left: 13px;
+        }
+
+        .ui-state-active {
+            margin: 0;
+
+            background-color: #eaeaea;
+        }
+
+        .ui-menu-item {
+            width: 100%;
+            height: 40px;
+
+            border-bottom: 1px solid rgba(50, 50, 50, 0.1);
+
+            font-size: 13px;
+            line-height: 35px;
+        }
+    }
+}

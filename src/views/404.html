@@ -1,0 +1,42 @@
+@@include('./../tpl/header.html', { 'headerClass': '', 'bodyId': 'error-page', 'activeCompany': '',
+'activeServices': '', 'activeChildren': '', 'activePayment': '', 'activeContacts': '', })
+
+<main class="content">
+  <div class="messengers">
+    <a href="/" class="icon--viber messengers__viber">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+
+    <a href="/" class="icon--whatsapp messengers__whatsapp">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+  </div>
+
+  <div class="container container--flex">
+    <aside class="aside">
+      @@include('./../tpl/aside/transport--links.html')
+    </aside>
+
+    <div class="content__main">
+      <section class="error-page">
+        <a href="/" class="button-back">
+          <span class="button-back__arrow"></span>
+          <span class="button-back__text">Главная</span>
+          <span class="button-back__title">Главная</span>
+        </a>
+
+        @@include('./../tpl/title-block.html', { title: 'Запрашиваемая вами страница не найдена' })
+
+        <div class="error-page__image">
+          <img src="/images/404/404.jpg" alt="error" />
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <a class="content__scroll-top"></a>
+</main>
+
+@@include('./../tpl/modal.html') @@include('./../tpl/footer.html')

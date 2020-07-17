@@ -1,0 +1,191 @@
+@@include('./../tpl/header.html', { 'headerClass': '', 'bodyId': 'school', 'activeCompany': '',
+'activeServices': '', 'activeChildren': 'active', 'activePayment': '', 'activeContacts': '', })
+
+<main class="content">
+  <div class="messengers">
+    <a href="/" class="icon--viber messengers__viber">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+
+    <a href="/" class="icon--whatsapp messengers__whatsapp">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+  </div>
+
+  <div class="container container--flex">
+    <aside class="aside">
+      <div class="aside__list">
+        <div class="aside__container">
+          <a href="/pages/children.html" class="aside__item">перевозки детских групп</a>
+          <a href="/" class="aside__item">почему мы</a>
+          <a href="/" class="aside__item">памятка организациям</a>
+          <a href="/pages/school.html" class="aside__item active">школьные экскурсии</a>
+          <a href="/pages/school-bus.html" class="aside__item">школьные автобусы</a>
+          <a href="/" class="aside__item">как подать уведомление</a>
+          <a href="/" class="aside__item">Транспортное обеспечение массовых мероприятий</a>
+        </div>
+      </div>
+
+      @@include('./../tpl/aside/transport--links.html')
+    </aside>
+
+    <div class="content__main">
+      <section class="school">
+        @@include('./../tpl/title-block.html', { title: 'Школьные экскурсии' })
+
+        <p class="school__text">
+          Компания «Абсолют» предлагает аренду автобусов для школьных экскурсий. Путешествие по
+          Северной столице сопровождается интересными рассказами, посещением удивительным мест и
+          невероятной атмосферой праздника. Автобусы повышенной комфортности будут удобны для ребят
+          любого возраста, а экскурсия оставит массу положительных впечатлений.
+        </p>
+
+        <div class="cards">
+          <div class="options options--children">
+            <div class="options__container">
+              <p class="options__tab">все</p>
+              <p class="options__tab active">история</p>
+              <p class="options__tab">архитектура</p>
+              <p class="options__tab">ЗАГОРОДНЫЕ</p>
+              <p class="options__tab">ЛИТЕРАТУРа</p>
+              <p class="options__tab">ВОЕННОЕ <span>ПРОШЛОЕ</span></p>
+              <p class="options__tab">ПРИРОДА</p>
+              <p class="options__tab">Я ПОЗНАЮ МИР</p>
+            </div>
+          </div>
+
+          <div class="cards__block">
+            <div class="card">
+              <div class="card__image">
+                <img src="/images/school/school-1.png" alt="school-1" />
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__price card__price--tour">
+                    от <span>300<span class="ruble-icon">&#8381;</span></span> / с чел.
+                  </p>
+                </div>
+
+                <button class="card__order card__order--tour">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title card__title--tour">
+                  История возникновения Санкт-Петербурга, «Петровское время северной столицы»
+                </p>
+
+                <div class="card__footer">
+                  <p class="card__class card__class--time">5 часов</p>
+                  <p class="card__additional card__additional--children">18- 40 чел.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img src="/images/school/school-2.png" alt="school-2" />
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__price card__price--tour">
+                    от <span>300<span class="ruble-icon">&#8381;</span></span> / с чел.
+                  </p>
+                </div>
+
+                <button class="card__order card__order--tour">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title card__title--tour">Эпоха Династии Романовых</p>
+
+                <div class="card__footer">
+                  <p class="card__class card__class--time">4 часа</p>
+                  <p class="card__additional card__additional--children">40 чел.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img src="/images/school/school-3.png" alt="school-3" />
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__price card__price--tour">
+                    от <span>300<span class="ruble-icon">&#8381;</span></span> / с чел.
+                  </p>
+                </div>
+
+                <button class="card__order card__order--tour">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title card__title--tour">Правление Екатерины Великой</p>
+
+                <div class="card__footer">
+                  <p class="card__class card__class--time">4 часа</p>
+                  <p class="card__additional card__additional--children">18- 40 чел.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img src="/images/school/school-2.png" alt="school-2" />
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__price card__price--tour">
+                    от <span>300<span class="ruble-icon">&#8381;</span></span> / с чел.
+                  </p>
+                </div>
+
+                <button class="card__order card__order--tour">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title card__title--tour">Эпоха Династии Романовых</p>
+
+                <div class="card__footer">
+                  <p class="card__class card__class--time">4 часа</p>
+                  <p class="card__additional card__additional--children">40 чел.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <img src="/images/school/school-3.png" alt="school-3" />
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__price card__price--tour">
+                    от <span>300<span class="ruble-icon">&#8381;</span></span> / с чел.
+                  </p>
+                </div>
+
+                <button class="card__order card__order--tour">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title card__title--tour">Правление Екатерины Великой</p>
+
+                <div class="card__footer">
+                  <p class="card__class card__class--time">4 часа</p>
+                  <p class="card__additional card__additional--children">18- 40 чел.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <a class="content__scroll-top"></a>
+</main>
+
+@@include('./../tpl/modal.html') @@include('./../tpl/footer.html')

@@ -1,0 +1,109 @@
+@@include('./../tpl/header.html', { 'headerClass': '', 'bodyId': 'reviews', 'activeCompany':
+'active', 'activeServices': '', 'activeChildren': '', 'activePayment': '', 'activeContacts': '', })
+
+<main class="content">
+  <div class="messengers">
+    <a href="/" class="icon--viber messengers__viber">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+
+    <a href="/" class="icon--whatsapp messengers__whatsapp">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+  </div>
+
+  <div class="container container--flex">
+    <aside class="aside">
+      <div class="aside__list">
+        <div class="aside__container">
+          <a href="/pages/company.html" class="aside__item">О компании</a>
+          <a href="/pages/customers.html" class="aside__item">Наши клиенты</a>
+          <a href="/pages/reviews.html" class="aside__item active">отзывы</a>
+          <a href="/pages/news.html" class="aside__item">новости</a>
+          <a href="/pages/faq.html" class="aside__item">вопросы и ответы</a>
+          <a href="/" class="aside__item">Транспортное обеспечение массовых мероприятий</a>
+        </div>
+      </div>
+
+      @@include('./../tpl/aside/transport--links.html')
+    </aside>
+
+    <div class="content__main">
+      <section class="reviews">
+        @@include('./../tpl/title-block.html', { title: 'Отзывы' })
+
+        <div class="reviews__item">
+          <div class="reviews__header">
+            <img src="/images/index/reviews-1.png" alt="reviews-1" class="reviews__image" />
+
+            <div class="reviews__header reviews__header--right">
+              <p class="reviews__date">25 ноя. 2019</p>
+              <span class="reviews__quote"></span>
+            </div>
+          </div>
+
+          <p class="reviews__name">Юлия Белова / <span>представитель РК</span></p>
+
+          <div class="reviews__text">
+            Ученики 1 Б класса гимназии им Сервантеса и их родители, выражают вашей компании
+            «Абсолют» благодарность за слаженную работу и профессионализм сотрудников. Особенно
+            хотим отметить работу менеджера Ильи и водителя Войтковского Станислава. Спасибо им
+            большое за внимательность, терпение и ответственность.
+          </div>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__header">
+            <img src="/images/index/reviews-1.png" alt="reviews-1" class="reviews__image" />
+
+            <div class="reviews__header reviews__header--right">
+              <p class="reviews__date">25 ноя. 2019</p>
+              <span class="reviews__quote"></span>
+            </div>
+          </div>
+
+          <p class="reviews__name">Анастасия</p>
+
+          <div class="reviews__text">
+            Добрый день! Благодарю, поездка 16.03.2020 в Кронштадт прошла замечательно. Очень
+            хороший автобус, профессиональный водитель, Людмиле отдельное спасибо за оперативность и
+            терпение в подготовке документов. Надеемся, что хотя бы к маю ситуация стабилизируется,
+            и мы сможем продолжить сотрудничество.
+          </div>
+
+          <a href="/" class="reviews__link">
+            <span class="icon icon--clip"></span>
+            <span class="reviews__text reviews__text--link"
+              >Читать <span>благодарственное</span> письмо</span
+            >
+          </a>
+        </div>
+        <div class="reviews__item">
+          <div class="reviews__header">
+            <img src="/images/index/reviews-1.png" alt="reviews-1" class="reviews__image" />
+
+            <div class="reviews__header reviews__header--right">
+              <p class="reviews__date">25 ноя. 2019</p>
+              <span class="reviews__quote"></span>
+            </div>
+          </div>
+
+          <p class="reviews__name">
+            Галина Николаевна и Мария/
+            <span>экскурсовод туристической компании «Акватория»</span>
+          </p>
+
+          <a href="/" class="reviews__link">
+            <span class="icon icon--clip"></span>
+            <span class="reviews__text reviews__text--link">Смотреть видео-отзыв</span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <a class="content__scroll-top"></a>
+</main>
+
+@@include('./../tpl/modal.html') @@include('./../tpl/footer.html')

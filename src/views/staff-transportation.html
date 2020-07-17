@@ -1,0 +1,427 @@
+@@include('./../tpl/header.html', { 'headerClass': '', 'bodyId': 'staff-transportation',
+'activeCompany': '', 'activeServices': 'active', 'activeChildren': '', 'activePayment': '',
+'activeContacts': '', })
+
+<main class="content">
+  <div class="messengers">
+    <a href="/" class="icon--viber messengers__viber">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+
+    <a href="/" class="icon--whatsapp messengers__whatsapp">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+  </div>
+
+  <div class="container container--flex">
+    <aside class="aside">
+      <div class="aside__list">
+        <div class="aside__container">
+          <a href="/pages/staff-transportation.html" class="aside__item active">развозка сотрудников</a>
+          <a href="/" class="aside__item">трансфер в аэропорт</a>
+          <a href="/" class="aside__item">автобусы в финляндию</a>
+          <a href="/" class="aside__item">автобусы в европу</a>
+          <a href="/" class="aside__item">VIP такси</a>
+          <a href="/" class="aside__item">Транспортное обеспечение массовых мероприятий</a>
+        </div>
+      </div>
+
+      @@include('./../tpl/aside/transport--links.html')
+    </aside>
+
+    <div class="content__main">
+      <section class="staff-transportation">
+        @@include('./../tpl/title-block.html', { title: 'Развозка сотрудников' })
+
+        <video
+          src=""
+          poster="/images/staff-transportation/video-poster.png"
+          class="staff-transportation__video"
+        ></video>
+
+        <p class="staff-transportation__text">
+          Предлагаем заказать развозку сотрудников по СПб. Имеем свой парк из 23 комфортабельных
+          автобусов для персонала. Вместимость транспорта — от 29 до 65 мест. В штате работают
+          водители с опытом 5 лет и более.
+        </p>
+        <p class="staff-transportation__text">
+          Автобусы для перевозки сотрудников к месту работы проходят технический осмотр перед каждым
+          выездом. А раз в месяц мы проводим полную диагностику автопарка. Служебная развозка
+          поможет решить проблему опозданий.
+        </p>
+
+        <p class="staff-transportation__text staff-transportation__text--red">
+          Уважаемые клиенты! Мы дезинфицируем транспорт после каждой поездки.
+        </p>
+
+        <form class="form">
+          <h3 class="form__title">Закажите перевозку сотрудников от 600 рублей</h3>
+
+          <p class="form__text">
+            Мы вам перезвоним, рассчитаем точную цену и по возможности сделаем скидку
+          </p>
+
+          <div class="form__block">
+            <div class="form__left">
+              <label class="form__label">
+                <p class="form__text form__text--label">ваше имя*</p>
+                <input type="text" class="form__input" />
+              </label>
+              <label class="form__label">
+                <p class="form__text form__text--label">телефон*</p>
+                <input type="text" class="form__input" />
+              </label>
+              <label class="form__label">
+                <p class="form__text form__text--label">Ваш email</p>
+                <input type="text" class="form__input" />
+              </label>
+
+              <p class="form__text form__text--notation">* Поля обязательны для заполнения</p>
+            </div>
+
+            <div class="form__right">
+              <label class="form__label">
+                <p class="form__text form__text--label">Подробности заказа</p>
+                <textarea
+                  class="form__textarea"
+                  placeholder="Маршрут, время прибытия и обратного отправления, количество человек"
+                ></textarea>
+              </label>
+
+              <p class="form__text form__text--agree">
+                Отправляя свои данные,
+                <a href="/">вы соглашаетесь на их обработку</a>
+              </p>
+
+              <input type="submit" value="Заказать расчет" class="form__submit" />
+            </div>
+          </div>
+        </form>
+
+        <div class="slider slider--main owl-carousel">
+          <img src="/images/staff-transportation/slider-1.png" alt="slider-1" />
+          <img src="/images/staff-transportation/slider-2.png" alt="slider-2" />
+          <img src="/images/staff-transportation/slider-3.png" alt="slider-3" />
+          <img src="/images/staff-transportation/slider-4.png" alt="slider-4" />
+
+          <img src="/images/staff-transportation/slider-1.png" alt="slider-1" />
+          <img src="/images/staff-transportation/slider-2.png" alt="slider-2" />
+          <img src="/images/staff-transportation/slider-3.png" alt="slider-3" />
+          <img src="/images/staff-transportation/slider-4.png" alt="slider-4" />
+        </div>
+
+        <h3 class="staff-transportation__title">
+          Заказав развозку персонала, вы получаете 3 преимущества:
+        </h3>
+
+        <ul class="staff-transportation__list">
+          <li class="staff-transportation__list-item">
+            Минимум опозданий на работу, четкое соблюдение распорядка. Такое положение дел
+            дисциплинирует сотрудников, потому как они знают, что опоздав на автобус, им придется
+            добираться самостоятельно.
+          </li>
+          <li class="staff-transportation__list-item">
+            Повышение лояльности подчиненных. Они понимают, что руководство проявляет заботу, а
+            потому и отдача получается соответствующая.
+          </li>
+          <li class="staff-transportation__list-item">
+            Преимущество перед остальными компаниями. Если вы претендуете на одного и того же
+            специалиста, который проживает далеко от офиса, предложите каждый день возить его на
+            работу бесплатно, и он усилит именно вашу команду.
+          </li>
+        </ul>
+
+        <h3 class="staff-transportation__title">
+          Стоимость организованной перевозки сотрудников ниже, чем общественный транспорт
+        </h3>
+
+        <p class="staff-transportation__text">
+          Общая стоимость развозки персонала рассчитывается индивидуально в каждом конкретном
+          случае. Итоговая цена зависит от:
+        </p>
+
+        <ul class="staff-transportation__list">
+          <li class="staff-transportation__list-item">Количества пассажиров;</li>
+          <li class="staff-transportation__list-item">Регулярности перевозок;</li>
+          <li class="staff-transportation__list-item">Количества рейсов в день;</li>
+          <li class="staff-transportation__list-item">Длины маршрута.</li>
+        </ul>
+
+        <p class="staff-transportation__text">
+          В любом случае организованная перевозка персонала выйдет дешевле, чем почасовая аренда
+          того же автобуса (ведь в этом случае вы не оплачиваете час подачи и минимальное время
+          заказа) и даже чем оплата месячного проездного на общественный транспорт для каждого из
+          сотрудников.
+        </p>
+
+        <h3 class="staff-transportation__title">Маршруты служебной развозки</h3>
+
+        <ul class="staff-transportation__list">
+          <li class="staff-transportation__list-item">от метро до офиса или объекта;</li>
+          <li class="staff-transportation__list-item">от вокзала или аэропорта до объекта;</li>
+          <li class="staff-transportation__list-item">от адреса до офиса или объекта;</li>
+          <li class="staff-transportation__list-item">между объектами.</li>
+        </ul>
+
+        <p class="staff-transportation__text">
+          Мы поможем составить оптимальный маршрут, позволяющий за минимальное время объехать все
+          необходимые точки.
+        </p>
+
+        <h3 class="staff-transportation__title">Наш транспорт</h3>
+
+        <p class="staff-transportation__text">
+          В зависимости от количества пассажиров вы можете выбрать тип транспорта.
+        </p>
+
+        <ul class="staff-transportation__list">
+          <li class="staff-transportation__list-item">
+            Для небольшой группы рабочих мы готовы предоставить минивэн (от 5 до 9 мест) или
+            микроавтобус (на 10-20 мест).
+          </li>
+          <li class="staff-transportation__list-item">
+            Если необходимо перевести большее количество человек, рекомендуем выбрать полноразмерный
+            автобус. У нас имеются автобусы Yutong на 30 мест, Scania и Volvo на 50 мест, а также
+            Neoplan, рассчитанный на 65 человек.
+          </li>
+        </ul>
+
+        <div class="adv">
+          <h3 class="adv__title">
+            Почему выгодна перевозка сотрудников на транспорте компании «Абсолют»
+          </h3>
+
+          <div class="adv__block">
+            <div class="adv__item">
+              <span class="icon icon--money"></span>
+              <p class="adv__text">У нас низкие цены — от 600 рублей за час.</p>
+            </div>
+            <div class="adv__item">
+              <span class="icon icon--manager"></span>
+              <p class="adv__text">Каждому клиенту предоставляется персональный менеджер.</p>
+            </div>
+            <div class="adv__item">
+              <span class="icon icon--man-2"></span>
+              <p class="adv__text">
+                Развозка персонала осуществляется <span>водителями с опытом от 5 лет,</span>
+                которые не только аккуратны за рулем и вежливы с клиентом, но еще и идеально знают
+                Санкт-Петербург, проворно объезжая пробки — никаких задержек.
+              </p>
+            </div>
+            <div class="adv__item">
+              <span class="icon icon--bus"></span>
+              <p class="adv__text">
+                При перевозках используются автобусы, оборудованными кондиционером, дополнительной
+                печкой, современной акустической системой и, конечно же, мягкими, эргономичными
+                сиденьями.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="staff-transportation__title">Как заказать?</h3>
+
+        <p class="staff-transportation__text">
+          При заказе транспорта для перевозки сотрудников к месту работы вам необходимо будет
+          сообщить нашему менеджеру следующую информацию:
+        </p>
+
+        <ul class="staff-transportation__list">
+          <li class="staff-transportation__list-item">
+            Количество пассажиров. От этого зависят тип и марка транспорта.
+          </li>
+          <li class="staff-transportation__list-item">
+            Маршрут и время отправления автобуса. Начальная и конечная точки, а также те пункты, в
+            которые вы планируете заехать по пути.
+          </li>
+          <li class="staff-transportation__list-item">
+            Период сотрудничества. Осуществляем развозку сотрудников, как единократно, так и на
+            постоянной основе.
+          </li>
+        </ul>
+
+        <p class="staff-transportation__text">
+          Чтобы заказать развозку сотрудников с СПб выберите подходящий транспорт и оставьте
+          онлайн-заявку на сайте или позвоните
+          <span class="staff-transportation__text--red"
+            >по телефону +7 (812) 996-56-96 или +8 (800) 550-96-85 (звонок бесплатный).</span
+          >
+        </p>
+
+        <div class="similar">
+          <div class="content__title-block">
+            <h3 class="content__title--block">варианты <span>транспорта</span></h3>
+            <div class="content__title-decor"></div>
+          </div>
+
+          <div class="cards">
+            <div class="cards__block slider owl-carousel">
+              <div class="card">
+                <div class="card__image">
+                  <span class="card__voice"></span>
+
+                  <img src="/images/bus/bus-1.png" alt="bus-1" />
+                </div>
+
+                <div class="card__block">
+                  <div class="card__cost">
+                    <p class="card__time">1 час аренды</p>
+                    <p class="card__price">1900<span class="ruble-icon">&#8381;</span></p>
+                  </div>
+
+                  <button class="card__order card__order--car">Заказать</button>
+                </div>
+
+                <div class="card__info">
+                  <p class="card__title">Man Regio 205</p>
+
+                  <div class="card__footer">
+                    <p class="card__year card__year--bus">2015г.</p>
+                    <p class="card__seats">59+1 мест</p>
+                    <p class="card__additional card__additional--buses">15 автобусов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <span class="card__voice"></span>
+
+                  <img src="/images/bus/bus-2.png" alt="bus-2" />
+                </div>
+
+                <div class="card__block">
+                  <div class="card__cost">
+                    <p class="card__time">1 час аренды</p>
+                    <p class="card__price">1700<span class="ruble-icon">&#8381;</span></p>
+                  </div>
+
+                  <button class="card__order card__order--car">Заказать</button>
+                </div>
+
+                <div class="card__info">
+                  <p class="card__title">MAN</p>
+
+                  <div class="card__footer">
+                    <p class="card__year card__year--bus">2015г.</p>
+                    <p class="card__seats">59+1 мест</p>
+                    <p class="card__additional card__additional--buses">15 автобусов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <span class="card__voice"></span>
+
+                  <img src="/images/bus/bus-1.png" alt="bus-1" />
+                </div>
+
+                <div class="card__block">
+                  <div class="card__cost">
+                    <p class="card__time">1 час аренды</p>
+                    <p class="card__price">1700<span class="ruble-icon">&#8381;</span></p>
+                  </div>
+
+                  <button class="card__order card__order--car">Заказать</button>
+                </div>
+
+                <div class="card__info">
+                  <p class="card__title">Zhong Tong</p>
+
+                  <div class="card__footer">
+                    <p class="card__year card__year--bus">2015г.</p>
+                    <p class="card__seats">59+1 мест</p>
+                    <p class="card__additional card__additional--buses">15 автобусов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <span class="card__voice"></span>
+
+                  <img src="/images/bus/bus-1.png" alt="bus-1" />
+                </div>
+
+                <div class="card__block">
+                  <div class="card__cost">
+                    <p class="card__time">1 час аренды</p>
+                    <p class="card__price">1900<span class="ruble-icon">&#8381;</span></p>
+                  </div>
+
+                  <button class="card__order card__order--car">Заказать</button>
+                </div>
+
+                <div class="card__info">
+                  <p class="card__title">Man Regio 205</p>
+
+                  <div class="card__footer">
+                    <p class="card__year card__year--bus">2015г.</p>
+                    <p class="card__seats">59+1 мест</p>
+                    <p class="card__additional card__additional--buses">15 автобусов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <span class="card__voice"></span>
+
+                  <img src="/images/bus/bus-2.png" alt="bus-2" />
+                </div>
+
+                <div class="card__block">
+                  <div class="card__cost">
+                    <p class="card__time">1 час аренды</p>
+                    <p class="card__price">1700<span class="ruble-icon">&#8381;</span></p>
+                  </div>
+
+                  <button class="card__order card__order--car">Заказать</button>
+                </div>
+
+                <div class="card__info">
+                  <p class="card__title">MAN</p>
+
+                  <div class="card__footer">
+                    <p class="card__year card__year--bus">2015г.</p>
+                    <p class="card__seats">59+1 мест</p>
+                    <p class="card__additional card__additional--buses">15 автобусов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__image">
+                  <span class="card__voice"></span>
+
+                  <img src="/images/bus/bus-1.png" alt="bus-1" />
+                </div>
+
+                <div class="card__block">
+                  <div class="card__cost">
+                    <p class="card__time">1 час аренды</p>
+                    <p class="card__price">1700<span class="ruble-icon">&#8381;</span></p>
+                  </div>
+
+                  <button class="card__order card__order--car">Заказать</button>
+                </div>
+
+                <div class="card__info">
+                  <p class="card__title">Zhong Tong</p>
+
+                  <div class="card__footer">
+                    <p class="card__year card__year--bus">2015г.</p>
+                    <p class="card__seats">59+1 мест</p>
+                    <p class="card__additional card__additional--buses">15 автобусов</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <a class="content__scroll-top"></a>
+</main>
+
+@@include('./../tpl/modal.html') @@include('./../tpl/footer.html')

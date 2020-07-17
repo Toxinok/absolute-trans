@@ -1,0 +1,401 @@
+@@include('./../tpl/header.html', { 'headerClass': '', 'bodyId': 'car', 'activeCompany': '',
+'activeServices': '', 'activeChildren': '', 'activePayment': '', 'activeContacts': '', })
+
+<div class="container">
+  <div class="breadcrumbs">
+    <a href="/" class="breadcrumbs__item">Автопарк</a>
+    <p class="breadcrumbs__item">Легковые</p>
+  </div>
+</div>
+
+<main class="content">
+  <div class="messengers">
+    <a href="/" class="icon--viber messengers__viber">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+
+    <a href="/" class="icon--whatsapp messengers__whatsapp">
+      <span class="path1"></span><span class="path2"></span><span class="path3"></span
+      ><span class="path4"></span><span class="path5"></span><span class="path6"></span>
+    </a>
+  </div>
+
+  <div class="container container--flex">
+    <aside class="aside">
+      <div class="aside__list aside__list--hide">
+        <div class="aside__container">
+          <a href="/" class="aside__item">Школьные автобусы</a>
+          <a href="/" class="aside__item">Развозка сотрудников</a>
+          <a href="/" class="aside__item">Автобусы в Финляндию</a>
+          <a href="/" class="aside__item">Автобусы в Европу</a>
+          <a href="/" class="aside__item">Трансфер в аэропорт</a>
+          <a href="/" class="aside__item">VIP Такси</a>
+          <a href="/" class="aside__item">Инструкция для пассажиров</a>
+          <a href="/" class="aside__item">Транспортное обеспечение массовых мероприятий</a>
+        </div>
+      </div>
+
+      @@include('./../tpl/aside/transport--links.html')
+    </aside>
+
+    <div class="content__main">
+      @@include('./../tpl/title-block.html', { title: 'Легковые' })
+
+      <section class="car">
+        <p class="car__text">
+          Предлагаем аренду автобусов с водителем в Санкт-Петербурге. Цена - от 1500 руб./час. В
+          компании работают опытные водители со стажем от 5 лет. Имеем свой парк автобусов
+          вместимостью от 29 до 65 мест. Крупные заказы сопровождает персональный менеджер. В
+          автобусах установлены климат-контроль, аудио- и видеосистемы, микрофон и удобные сиденья с
+          подлокотниками. Перед каждым выездом на заказ автобусы проходят технический контроль.
+          Полная диагностика парка проводится раз в месяц.
+        </p>
+
+        <div class="cards">
+          <div class="options">
+            <div class="options__tabs">
+              <p class="options__tab active">Бизнес <span>класс</span></p>
+              <p class="options__tab">Представительский <span>класс</span></p>
+              <p class="options__tab">Эконом класс</p>
+            </div>
+
+            <div class="options__select-wrapper options__select--brand">
+              <select class="options__select">
+                <option value="Mercedes">Mercedes</option>
+                <option value="BMW">BMW</option>
+                <option value="Porche">Porche</option>
+              </select>
+            </div>
+
+            <div class="options__select-wrapper options__select-wrapper--sort">
+              <select class="options__select">
+                <option value="money-bigger">по возрастанию цены</option>
+                <option value="money-lower">по убыванию цены</option>
+                <option value="year-newer">по году: новее</option>
+                <option value="year-older">по году: старше</option>
+              </select>
+            </div>
+
+            <div class="options__filters">
+              <div class="options__filters-container">
+                <div class="options__filter active">дороже</div>
+                <div class="options__filter">дешевле</div>
+                <div class="options__filter">новее</div>
+                <div class="options__filter">старее</div>
+                <div class="options__filter">Mercedes</div>
+                <div class="options__filter">BMW</div>
+                <div class="options__filter">Porche</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards__block">
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <a href="/pages/car-details.html">
+                  <img src="/images/index/car-2.png" alt="card-2" />
+                </a>
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">2000<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Porsche Panamera</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <a href="/pages/car-details.html">
+                  <img src="/images/index/car-2.png" alt="card-2" />
+                </a>
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">2000<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Porsche Panamera</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <a href="/pages/car-details.html">
+                  <img src="/images/index/car-2.png" alt="card-2" />
+                </a>
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">2000<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Porsche Panamera</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <a href="/pages/car-details.html">
+                  <img src="/images/index/car-2.png" alt="card-2" />
+                </a>
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">2000<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Porsche Panamera</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <a href="/pages/car-details.html">
+                  <img src="/images/index/car-2.png" alt="card-2" />
+                </a>
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">2000<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Porsche Panamera</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <a href="/pages/car-details.html">
+                  <img src="/images/index/car-2.png" alt="card-2" />
+                </a>
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">2000<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Porsche Panamera</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <a href="/pages/car-details.html">
+                  <img src="/images/index/car-2.png" alt="card-2" />
+                </a>
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">2000<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Porsche Panamera</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <a href="/pages/car-details.html">
+                  <img src="/images/index/car-2.png" alt="card-2" />
+                </a>
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">2000<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Porsche Panamera</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__image">
+                <span class="card__voice"></span>
+
+                <a href="/pages/car-details.html">
+                  <img src="/images/index/car-2.png" alt="card-2" />
+                </a>
+              </div>
+
+              <div class="card__block">
+                <div class="card__cost">
+                  <p class="card__time">1 час аренды</p>
+                  <p class="card__price">2000<span class="ruble-icon">&#8381;</span></p>
+                </div>
+
+                <button class="card__order card__order--car">Заказать</button>
+              </div>
+
+              <div class="card__info">
+                <p class="card__title">Porsche Panamera</p>
+
+                <div class="card__footer">
+                  <p class="card__year card__year--car">2012г.</p>
+                  <p class="card__seats">белая кожа</p>
+                  <p class="card__additional card__additional--door">белый и черный</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="conditions">
+          <h2 class="conditions__title">Условия заказа автобуса</h2>
+
+          <ul class="conditions__list">
+            <li class="conditions__list-item">Минимальная стоимость аренды – 1500 руб/час.</li>
+            <li class="conditions__list-item">
+              Минимальный срок проката автобуса – 3 часа + 1 час подачи.
+            </li>
+            <li class="conditions__list-item">
+              При бронировании автобуса возможна предоплата 30% или 50% от общей стоимости заказа.
+            </li>
+            <li class="conditions__list-item">
+              Время доставки автобуса за КАД (до 50 км) составляет 2-3 часа.
+            </li>
+            <li class="conditions__list-item">
+              При условии выезда за КАД в пределах 40 км, добавьте 1 час к времени пользования
+              автобусом, если в пределах 70 км – 2 часа.
+            </li>
+            <li class="conditions__list-item">
+              Стоимость поездок на дальние расстояния определяется индивидуально.
+            </li>
+            <li class="conditions__list-item">
+              Оплату аренды можно произвести любым способом, наиболее удобным для вас.
+            </li>
+          </ul>
+
+          <h2 class="conditions__title">Правила отмены бронирования</h2>
+
+          <p class="conditions__text">Если клиент отменяет заказ автобуса:</p>
+
+          <ul class="conditions__list">
+            <li class="conditions__list-item">
+              не позднее, чем за 3 дня до поездки – возвращаем 100% предоплаты;
+            </li>
+            <li class="conditions__list-item">за 1-2 дня – 50%.</li>
+            <li class="conditions__list-item">
+              менее, чем за 24 часа – предоплату не возвращаем.
+            </li>
+          </ul>
+
+          <p class="conditions__text">
+            Сроки штрафов изменяются в случае брони на мероприятия государственного масштаба (ПМЭФ,
+            ФИФА и т.д.)
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <a class="content__scroll-top"></a>
+</main>
+
+@@include('./../tpl/modal.html') @@include('./../tpl/footer.html')

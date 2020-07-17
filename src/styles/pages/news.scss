@@ -1,0 +1,201 @@
+#news {
+    .news {
+        padding-bottom: 350px;
+
+        @media screen and (max-width: 1200px) {
+            padding: 70px 0 250px;
+        }
+
+        @media screen and (max-width: 860px) {
+            padding-bottom: 300px;
+        }
+
+        @media screen and (max-width: 410px) {
+            padding: 60px 10px 300px;
+        }
+
+        & .title-block {
+            padding-bottom: 40px;
+
+            @media screen and (max-width: 1200px) {
+                display: none;
+            }
+        }
+
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            cursor: pointer;
+
+            @media screen and (max-width: 860px) {
+                flex-direction: column;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 75px;
+            }
+        }
+
+        &__image {
+            position: relative;
+
+            margin-right: 35px;
+
+            @media screen and (max-width: 1660px) {
+                margin-right: 25px;
+            }
+
+            @media screen and (max-width: 860px) {
+                margin-right: 0;
+                margin-bottom: 20px;
+
+                img {
+                    width: 100%;
+                    max-height: 173px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &__date {
+            color: #fff;
+            font-size: 12px;
+            text-transform: uppercase;
+
+            &--big {
+                font-size: 25px;
+            }
+
+            &-block {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                padding-top: 5px;
+                width: 57px;
+                height: 49px;
+
+                border-bottom-right-radius: 3px;
+                background-image: linear-gradient(-14deg, #8c0327 0%, #e30613 100%);
+                text-align: center;
+            }
+        }
+
+        &__info {
+        }
+
+        &__title {
+            margin-bottom: 23px;
+
+            color: #c80519;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+
+            @media screen and (max-width: 1660px) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            @media screen and (max-width: 860px) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+
+            & .hide {
+                &--1660 {
+                    @media screen and (max-width: 1660px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &__link {
+            color: #c90519;
+            text-decoration: underline;
+        }
+    }
+
+    .options {
+        margin-bottom: 50px;
+        padding-left: 30px;
+
+        @media screen and (max-width: 1200px) {
+            margin-bottom: 30px;
+            padding-left: 0;
+        }
+
+        @media screen and (max-width: 860px) {
+            overflow-x: auto;
+        }
+
+        &__container {
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 860px) {
+                justify-content: space-between;
+                width: 560px;
+                padding-bottom: 15px;
+            }
+
+            @media screen and (max-width: 410px) {
+                width: 450px;
+            }
+        }
+
+        &__tab {
+            padding-bottom: 15px;
+
+            font-size: 19px;
+            text-transform: uppercase;
+
+            cursor: pointer;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 860px) {
+                padding-bottom: 10px;
+            }
+
+            &:not(:last-child) {
+                margin-right: 50px;
+
+                @media screen and (max-width: 860px) {
+                    margin-right: 0;
+                }
+            }
+
+            &.active {
+                padding-bottom: 15px;
+
+                position: relative;
+
+                @media screen and (max-width: 860px) {
+                    padding-bottom: 10px;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+
+                    width: 100%;
+                    height: 1px;
+
+                    background: $gradient;
+                }
+            }
+        }
+    }
+}

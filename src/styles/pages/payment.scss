@@ -1,0 +1,22 @@
+#payment {
+    .payment {
+        display: block;
+        padding: 34px 0 150px;
+
+        @media screen and (max-width: 1200px) {
+            padding-bottom: 200px;
+        }
+
+        @media screen and (max-width: 860px) {
+            padding-bottom: 280px;
+        }
+
+        @media screen and (max-width: 410px) {
+            padding: 35px 10px 280px;
+        }
+
+        &__requisites {
+            margin: 20px 0;
+        }
+    }
+}
